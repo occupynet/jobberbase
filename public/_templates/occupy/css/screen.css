@@ -197,16 +197,43 @@ div#box .addJob
 
 div#box .addJob a.add
 {
-	background:url(../img/bt-post.png) no-repeat 0 0;
+	background: #0099cc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0099cc 0%, #0384b0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0099cc), color-stop(100%,#0384b0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0099cc 0%,#0384b0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0099cc 0%,#0384b0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0099cc 0%,#0384b0 100%); /* IE10+ */
+	background: linear-gradient(top,  #0099cc 0%,#0384b0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099cc', endColorstr='#0384b0',GradientType=0 ); /* IE6-9 */
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+	
+	border:2px solid #026282;
+	color:white;
 	display:block;
-	height:47px;
-	text-indent:-1000em;
-	width:182px;
+	font-size: 28px;
+  font-weight: bold;
+	height:43px;
+	padding:0 10px;
+	text-align:center;
+	text-transform: uppercase;
 }
 
 div#box .addJob a.add:hover
 {
-	background:url(../img/bt-post.png) no-repeat -182px 0;
+	background: #0384b0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0384b0 0%, #0099cc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0384b0), color-stop(100%,#0099cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0384b0 0%,#0099cc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0384b0 0%,#0099cc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0384b0 0%,#0099cc 100%); /* IE10+ */
+	background: linear-gradient(top,  #0384b0 0%,#0099cc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0384b0', endColorstr='#0099cc',GradientType=0 ); /* IE6-9 */
+	
+	text-decoration:none;
 }
 
 #content
