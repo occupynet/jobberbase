@@ -4,10 +4,10 @@
 	{foreach item=job from=$spotlight_jobs}
 		<div class="row-spot">
 			<span class="row-info">
-				<img src="{$BASE_URL}_templates/{$THEME}/img/icon-{$job.type_var_name}.png" alt="{$job.type_name}" />
+				<span class="{$job.type_var_name} job-type">{$job.type_name}</span>
 				<a href="{$BASE_URL}{$URL_JOB}/{$job.id}/{$job.url_title}/" title="{$job.title}">{$job.title}</a> <span class="la">{$translations.homepage.at}</span> {$job.company}{if $job.is_location_anywhere}, {$translations.jobs.location_anywhere}{else} <span class="la">{$translations.homepage.in}</span> {$job.location}{/if}
 			</span>
-			<span class="spotlight-image"></span>
+			<span class="spotlight-image">spotlight</span>
 		</div>
 	{/foreach}
 {/if}
@@ -19,7 +19,7 @@
 	{foreach item=job from=$latest_jobs}
 		<div class="{cycle values='row,row-alt'}">
 			<span class="row-info">
-				<img src="{$BASE_URL}_templates/{$THEME}/img/icon-{$job.type_var_name}.png" alt="{$job.type_name}" />
+				<span class="{$job.type_var_name} job-type">{$job.type_name}</span>
 				<a href="{$BASE_URL}{$URL_JOB}/{$job.id}/{$job.url_title}/" title="{$job.title}">{$job.title}</a> <span class="la">{$translations.homepage.at}</span> {$job.company}{if $job.is_location_anywhere}, {$translations.jobs.location_anywhere}{else} <span class="la">{$translations.homepage.in}</span> {$job.location}{/if}
 			</span>
 			<span class="time-posted"><img src="{$BASE_URL}_templates/{$THEME}/img/clock.gif" alt="" /> {$job.created_on}</span>
@@ -38,7 +38,7 @@
 	{foreach item=job from=$most_applied_to_jobs}
 		<div class="{cycle values='row,row-alt'}">
 			<span class="row-info">
-				<img src="{$BASE_URL}_templates/{$THEME}/img/icon-{$job.type_var_name}.png" alt="{$job.type_name}" />
+				<span class="{$job.type_var_name} job-type">{$job.type_name}</span>
 				<a href="{$BASE_URL}{$URL_JOB}/{$job.id}/{$job.url_title}/" title="{$job.title}">{$job.title}</a> <span class="la">{$translations.homepage.at}</span> {$job.company}{if $job.is_location_anywhere}, {$translations.jobs.location_anywhere}{else} <span class="la">{$translations.homepage.in}</span> {$job.location}{/if}
 			</span>
 			<span class="time-posted"><strong>{$job.apps}</strong> {$translations.homepage.applicants}</span>			

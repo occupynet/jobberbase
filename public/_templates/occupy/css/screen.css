@@ -88,6 +88,22 @@ em
 
 /* You can start editing from this point on */
 
+/* Job type style */
+
+span.job-type, .spotlight-image {
+background-color: #CCC;
+color: #444;
+font-size: 10px;
+padding: 0 5px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+}
+
+span.job-type.ongoing { background-color: #800080; color:#FFF; }
+span.job-type.one-time { background-color: #085; color:#FFF; }
+
 div#container
 {
 	font-size:1.2em;
@@ -1035,13 +1051,10 @@ div#sort-by-type a:hover
 
 .spotlight-image
 {
-	background-image:url(../img/icon-spotlight.png);
-	background-repeat:no-repeat;
+	background-color:#FC0;
+	color:#000;
 	float:right;
-	height:11px;
-	margin:4px;
-	padding-right:5px;
-	width:77px;
+	font-size:14px;
 }
 
 #view_all
