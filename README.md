@@ -1,3 +1,8 @@
+## Occupy.net information ##
+
+E-mail us: tech@occupy.net
+Website: http://classifieds.occupy.net
+
 ######## Useful info ########
 
 Our blog: http://www.jobberbase.com/blog/
