@@ -31,7 +31,7 @@
 </head>
 
 <body>
-<iframe src="http://www.Occupy.net/nav/occupynet.html#Classifieds" frameborder="0" style="width:100%;height:36px;"></iframe>
+<script type="text/javascript" src="https://nav.occupy.net/occupynet_nav.js"></script>
 	<div id="container">
 		{if $smarty.session.status neq ''}
 			<div id="status">
